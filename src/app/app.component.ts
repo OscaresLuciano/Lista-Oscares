@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Lista-Oscares';
+
+  mostrarLista = true;
+
+  personas = [
+    'Luciano',
+    'Sabrina',
+    'Carla',
+    'Dante'
+  ];
+
+  toggleList() {
+    this.mostrarLista = !this.mostrarLista;
+  }
+
 }
